@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Raleway-800";
+  src: url("../assets/fonts/Raleway-Black.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+.h-100vh {
+  height: 100dvh;
+}
+
+body {
+  --sb-track-color: #eaeaea;
+  --sb-thumb-color: #00176a;
+  --sb-size: 12px;
+}
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+.sec-title {
+  text-align: center;
+  margin: auto;
+  padding: 24px 0;
+  font-family: "Raleway Black";
+}
+.sec-title h2 {
+  font-size: 54px;
+}
+
+@media (max-width: 576px) {
+  .sec-title h2 {
+    font-size: 28px;
+  }
+}
+nav .sideGrp {
+  display: none;
+  top: 0;
+  left: 0;
+}
+nav .sideGrp .sideNav .nav-links {
+  min-width: 280px;
+}
+nav .sideGrp .sideNav .nav-links i {
+  cursor: pointer;
+}
+nav .sideGrp .sideNav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.5s;
+  border-bottom: 2px solid transparent;
+}
+nav .sideGrp .sideNav .nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+header {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0.6), hsla(0, 0%, 10%, 0.6)), url("../assets/images/EventGathering.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+header .header-content {
+  color: white;
+}
+header .header-content h1 {
+  font-family: "Raleway Black";
+  font-size: 6rem;
+}
+header .header-content p {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  line-height: 0.8;
+}
+header .header-content .icons a {
+  color: white;
+}
+
+.section1 .accordion-item .accordion-header {
+  font-family: "Raleway Black";
+  font-size: 18px;
+  padding: 8px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 2px solid #00176a;
+  border-left: 4px solid #00176a;
+  gap: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.section1 .accordion-item i {
+  transition: 0.5s;
+  font-size: 26px;
+  order: -1;
+}
+.section1 .accordion-body {
+  text-align: justify;
+  font-family: "Poppins Light";
+  border-bottom: 2px solid #00176a;
+  display: none;
+}
+
+.section2 .counters-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+.section2 .counters-section .counter-card i {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.section2 .counters-section .counter-card .counter {
+  font-size: 28px;
+  margin: 20px auto;
+  font-family: "Raleway Black";
+  font-weight: 800;
+}
+.section2 .counters-section .counter-card h4 {
+  margin-top: 8px;
+  font-size: 20px;
+}
+.section2 h5 {
+  font-family: "Poppins Light";
+}
+
+.section3 .map iframe {
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid #00176a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+footer {
+  font-family: "Poppins Light";
+}
+footer .container .info {
+  height: 100%;
+}
+footer .container .info h3 {
+  font-family: "Raleway Medium";
+}
+footer .container .info p {
+  text-align: justify;
+}
+footer .container .info p i {
+  width: 40px;
+  color: #00176a;
+}
+footer .container .icons a {
+  color: #00176a;
+}
+footer .container form {
+  font-family: "Raleway Medium";
+}
+footer .container form .clear {
+  display: none;
+}
+footer .container form button:first-of-type {
+  font-family: "Raleway Black";
+  background-color: #00176a;
+  color: white;
+  outline: 1px solid #00176a;
+}
+footer .container form button:first-of-type:hover {
+  background-color: transparent;
+  color: #00176a;
+}
+footer .container .charsNum {
+  font-family: "Raleway Black";
+  font-size: 18px;
+  color: #00176a;
+}
+footer .container .limit {
+  color: #d41d1d;
+}/*# sourceMappingURL=main.css.map */

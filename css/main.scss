@@ -1,0 +1,234 @@
+// No need for global rules bcs bootstrap adds it.
+$bs-main-color: #0d6efd;
+$bs-sec-color: #cde1f8;
+// Adding local fonts
+@mixin font($font-family, $font-files) {
+  @each $font-file, $font-weight in $font-files {
+    @font-face {
+      font-family: "#{$font-family}-#{$font-weight}";
+      src: url("#{$font-file}.ttf");
+      font-weight: $font-weight;
+    }
+  }
+}
+$Raleway-font-files: (
+  ("../assets/fonts/Raleway-Black", 800),
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Medium", 600),
+  ("../assets/fonts/Poppins-Regular", 400)
+);
+@include font("Raleway", $Raleway-font-files);
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+// Global classes
+.h-100vh {
+  height: 100dvh;
+}
+body {
+  --sb-track-color: #eaeaea;
+  --sb-thumb-color: #00176a;
+  --sb-size: 12px;
+  &::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 6px;
+  }
+}
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+.sec-title {
+  text-align: center;
+  margin: auto;
+  padding: 24px 0;
+  font-family: "Raleway Black";
+  h2 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 576px) {
+  .sec-title {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+//  Start of the main stylesheet
+nav {
+  .sideGrp {
+    display: none;
+    top: 0;
+    left: 0;
+
+    .sideNav {
+      .nav-links {
+        min-width: 280px;
+        i {
+          cursor: pointer;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 24px;
+          transition: all 0.5s;
+          border-bottom: 2px solid transparent;
+          &:hover {
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+header {
+  background-image: linear-gradient(
+      hsla(0, 0%, 10%, 0.6),
+      hsla(0, 0%, 10%, 0.6)
+    ),
+    url("../assets/images/EventGathering.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  .header-content {
+    color: white;
+    h1 {
+      font-family: "Raleway Black";
+      font-size: 6rem;
+    }
+    p {
+      font-size: 3rem;
+      margin-bottom: 0px;
+      line-height: 0.8;
+      // add animation
+    }
+    .icons {
+      a {
+        color: white;
+      }
+    }
+  }
+  margin-bottom: 2rem;
+}
+.section1 {
+  .accordion-item {
+    .accordion-header {
+      font-family: "Raleway Black";
+      font-size: 18px;
+      padding: 8px 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: baseline;
+      border-bottom: 2px solid #00176a;
+      border-left: 4px solid #00176a;
+      gap: 24px;
+      user-select: none;
+    }
+    i {
+      transition: 0.5s;
+      font-size: 26px;
+      order: -1;
+    }
+  }
+  .accordion-body {
+    text-align: justify;
+    font-family: "Poppins Light";
+    border-bottom: 2px solid #00176a;
+    display: none;
+  }
+}
+.section2 {
+  // Counters
+  .counters-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    .counter-card {
+      i {
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+      .counter {
+        font-size: 28px;
+        margin: 20px auto;
+        font-family: "Raleway Black";
+        font-weight: 800;
+      }
+      h4 {
+        margin-top: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+  h5 {
+    font-family: "Poppins Light";
+  }
+}
+.section3 {
+  .map {
+    iframe {
+      width: 100%;
+      min-height: 400px;
+      border: 1px solid #00176a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+footer {
+  font-family: "Poppins Light";
+  .container {
+    .info {
+      height: 100%;
+      h3 {
+        font-family: "Raleway Medium";
+      }
+      p {
+        text-align: justify;
+        i {
+          width: 40px;
+          color: #00176a;
+        }
+      }
+    }
+    .icons {
+      a {
+        color: #00176a;
+      }
+    }
+    form {
+      font-family: "Raleway Medium";
+      .clear {
+        display: none;
+      }
+      button:first-of-type {
+        font-family: "Raleway Black";
+        background-color: #00176a;
+        color: white;
+        outline: 1px solid #00176a;
+      }
+      button:first-of-type:hover {
+        background-color: transparent;
+        color: #00176a;
+      }
+    }
+    .charsNum {
+      font-family: "Raleway Black";
+      font-size: 18px;
+      color: #00176a;
+    }
+    .limit {
+      color: #d41d1d;
+    }
+  }
+}

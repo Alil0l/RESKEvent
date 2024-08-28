@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/RouteLogo.jpeg"
+      type="image/x-icon"
+    />
+    <title>Event Time!</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/RouteLogo.jpeg"
+      type="image/x-icon"
+    />
+    <!-- Link Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link FontAwosome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Link Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- Side Nav -->
+    <nav class="position-fixed d-flex h-100vh z-2 gap-2">
+      <div class="sideGrp">
+        <div class="sideNav w-100 h-100 d-flex gap-2">
+          <div
+            class="nav-links bg-dark h-100 d-flex flex-column gap-4 px-5 py-5 align-items-start"
+          >
+            <i
+              class="fa-regular fa-circle-xmark text-white align-self-end fa-2x close"
+            ></i>
+            <a href="#home">Home</a>
+            <a href="#prepare">Preparation</a>
+            <a href="#timers">CountDown</a>
+            <a href="#map">Location</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <span class="mx-2 btn btn-dark text-white align-self-center open"
+        ><i class="fa-solid fa-angle-right"></i
+      ></span>
+    </nav>
+    <!-- End Side Nav -->
+    <!-- Header -->
+    <header class="w-100 h-100vh" id="home">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 text-center">
+          <div class="header-content d-flex flex-column">
+            <p>Get Ready!</p>
+            <h1>RESK Event</h1>
+            <div class="icons d-flex align-self-center gap-4 mt-5">
+              <a href="https://www.facebook.com/reskacademy" target="_blank"
+                ><i class="fa-brands fa-facebook-f fa-2x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/routeacademy"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2x"></i
+              ></a>
+              <a href="https://www.instagram.com/routelearning" target="_blank"
+                ><i class="fa-brands fa-instagram fa-2x"></i
+              ></a>
+              <a href="https://youtube.com/@routeacademy9441" target="_blank"
+                ><i class="fa-brands fa-youtube fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <section class="section1" id="prepare">
+          <div class="sec-title">
+            <h2 class="text-black text-uppercase fw-bolder">Preparation</h2>
+          </div>
+          <div class="row align-content-center justify-content-center">
+            <div class="col-8 text-center">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    Research Participating Companies (For Job Seekers):
+                    <i class="fa-solid fa-plus"></i>
+                  </h2>
+                  <div class="accordion-body">
+                    Attending a job fair is all about making connections. Before
+                    the event, take some time to research the companies that
+                    will be participating. Visit their websites, familiarize
+                    yourself with their products or services, and identify roles
+                    that align with your skills and interests. This will allow
+                    you to ask insightful questions during your interactions and
+                    demonstrate genuine interest in their work.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    Prepare Your Resume and Portfolio (For Job Seekers):
+                    <i class="fa-solid fa-plus"></i>
+                  </h2>
+                  <div class="accordion-body">
+                    Ensure your resume is updated with your most recent skills
+                    and experience. Tailor it to highlight the qualifications
+                    relevant to the roles you're interested in. Have multiple
+                    copies printed on high-quality paper to distribute to
+                    recruiters at the event. If you're a developer, designer, or
+                    creative professional, consider bringing a digital portfolio
+                    showcasing your best work.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    Craft Your Elevator Pitch (For Everyone):
+                    <i class="fa-solid fa-plus"></i>
+                  </h2>
+                  <div class="accordion-body">
+                    An elevator pitch is a concise and compelling summary of
+                    yourself and your value proposition. It should be no longer
+                    than 30 seconds and effectively communicate your skills,
+                    experience, and career goals. Whether you're a job seeker,
+                    entrepreneur, or simply attending to network, having a
+                    strong elevator pitch will allow you to make a lasting
+                    impression on anyone you meet.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    Dress for Success (For Everyone):
+                    <i class="fa-solid fa-plus"></i>
+                  </h2>
+                  <div class="accordion-body">
+                    First impressions matter! Dress professionally to showcase
+                    your confidence and seriousness about the event. Opt for
+                    business casual attire or formal wear depending on the
+                    specific instructions provided by Route Academy. Feeling
+                    polished will boost your confidence and make a positive
+                    impact during interactions.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    Plan Your Schedule and Set Goals (For Everyone):
+                    <i class="fa-solid fa-plus"></i>
+                  </h2>
+                  <div class="accordion-body">
+                    Familiarize yourself with the schedule of events, workshops,
+                    or talks offered at the Route Tech Summit/Job Fair.
+                    Prioritize the sessions that align with your interests and
+                    career goals. Set realistic goals for the event, whether
+                    it's connecting with a specific number of companies,
+                    attending certain talks, or landing an interview. Having a
+                    plan will maximize your time and ensure a productive
+                    experience.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section2" id="timers">
+          <div class="sec-title mt-5">
+            <h2 class="text-black text-uppercase fw-bolder">CountDown</h2>
+          </div>
+          <div class="counters-section">
+            <div class="container">
+              <div class="counters-box row">
+                <div class="counter-card col-12 col-lg-3 mb-3 mb-lg-0">
+                  <div class="counter day">00</div>
+                  <h4>Days</h4>
+                </div>
+                <div class="counter-card col-12 col-lg-3 mb-3 mb-lg-0">
+                  <div class="counter hour">00</div>
+                  <h4>Hours</h4>
+                </div>
+                <div class="counter-card col-12 col-lg-3 mb-3 mb-lg-0">
+                  <div class="counter min">00</div>
+                  <h4>Minutes</h4>
+                </div>
+                <div class="counter-card col-12 col-lg-3 mb-3 mb-lg-0">
+                  <div class="counter sec">00</div>
+                  <h4>Seconds</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="text-black text-center">
+            Location, Cairo | Sep. 28, 2024 @ 12:00 AM
+          </h5>
+        </section>
+        <section class="section3" id="map">
+          <div class="sec-title mt-5">
+            <h2 class="text-black text-uppercase fw-bolder">Location</h2>
+          </div>
+          <div class="map mb-5 d-flex justify-content-lg-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7272881358595!2d31.236331611548263!3d30.044680774818918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c7dd7c0881%3A0xa9d580a5ab604a39!2sGreek%20Campus!5e0!3m2!1sen!2seg!4v1720669836051!5m2!1sen!2seg"
+              width="800"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer id="contact">
+      <div class="container my-5">
+        <div class="sec-title mt-5">
+          <h2 class="text-black text-uppercase fw-bolder">Have a Question?</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex">
+            <div class="info d-flex justify-content-between flex-column">
+              <h3>Contact</h3>
+              <p>
+                We're here to answer your questions and support your needs. Feel
+                free to reach out to us using the form below, and a member of
+                our team will be in touch shortly.
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                <a
+                  href="https://maps.app.goo.gl/9VZfgURAbcMWYhwX6"
+                  target="_blank"
+                  >Open on Map</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:routeegypt@gmail.com">reskacademy@gmail.com</a>
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +20 106 405 2253</p>
+              <div class="icons d-flex align-self-start gap-4 mt-5">
+                <a href="https://www.facebook.com/Routelearning" target="_blank"
+                  ><i class="fa-brands fa-facebook-f fa-2x"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/routeacademy"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin fa-2x"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/routelearning"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram fa-2x"></i
+                ></a>
+                <a href="https://youtube.com/@routeacademy9441" target="_blank"
+                  ><i class="fa-brands fa-youtube fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <form
+              class="form-control frm-cont border-0 bg-transparent d-flex flex-column justify-content-between h-100"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control mb-3"
+                  placeholder="Name"
+                />
+
+                <input
+                  type="email"
+                  class="form-control mb-3"
+                  placeholder="Email"
+                />
+
+                <textarea
+                  class="form-control chars"
+                  rows="5"
+                  placeholder="Add your message"
+                ></textarea>
+              </div>
+              <div class="char-counter">
+                <p>
+                  <span class="charsNum">200</span>
+                  <span class="charsRem">Characters Remaining</span>
+                </p>
+              </div>
+              <div class="btns">
+                <button class="btn align-self-start" type="button">
+                  Send Message
+                </button>
+                <button
+                  class="btn ms-3 btn-danger align-self-start clear"
+                  type="button"
+                >
+                  Clear
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="text-center text-capitalize">
+      <p class="m-0 bg-dark text-white p-2">Made With Love © Ali Mostafa</p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
